@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Hear Word And Type</string>
+
+    <string name="dummy">Dummy</string>
+    <string name="previous_button">Previous Button</string>
+    <string name="next_button">Next Button</string>
+    <string name="show_word">Show Word</string>
+    <string name="write_word">Write word…</string>
+    <string name="bingo_vocab">(Bingo Vocab)</string>
+    <string name="go">Go</string>
+    <string name="enter_question_number">Enter Question Number</string>
+
+</resources>

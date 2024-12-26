@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="callback"
+            type="com.hear_word_and_type.app.ui.base.BaseCustomDialog.DialogListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_gray_filled_10sdp"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_number"
+                style="@style/CustomEditText"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:focusableInTouchMode="true"
+                android:hint="@string/enter_question_number"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGo"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_gradient_center"
+            android:includeFontPadding="false"
+            android:onClick="@{(v)->callback.onViewClick(v)}"
+            android:text="@string/go"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintNumber" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

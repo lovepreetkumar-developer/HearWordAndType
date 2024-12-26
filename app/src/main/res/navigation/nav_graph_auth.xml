@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_auth"
+    app:startDestination="@id/splash_fragment">
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.hear_word_and_type.app.ui.fragments.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_bookmarked_fragment"
+            app:destination="@id/bookmarked_fragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookmarked_fragment"
+        android:name="com.hear_word_and_type.app.ui.fragments.BookmarkedFragment"
+        tools:layout="@layout/fragment_bookmarked">
+
+    </fragment>
+
+</navigation>
