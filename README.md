@@ -21,7 +21,7 @@ All 1500 carefully selected words are available offline, making it convenient to
 Skill Development:
 Enhance your spelling, listening, and typing skills in an enjoyable and gamified way.
 
-How to Use
+How to Use:
 Launch the app and start the session.
 Listen to the spoken word through your phone’s speaker.
 Type the word correctly to move to the next challenge.
